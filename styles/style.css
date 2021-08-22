@@ -4,11 +4,15 @@
           box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+  margin: 0;
+}
+
 body {
   margin: 0;
   padding: 0 2.5rem;
-  height: 100vh;
-  background: url(../images/night-vertical.png) no-repeat;
+  background: url(../images/nighty.jpg) no-repeat;
   background-size: cover;
   background-color: #1d1d1d;
   font-family: 'Urbanist', sans-serif;
@@ -32,7 +36,7 @@ body {
 
 .top time {
   margin-top: 3.25px;
-  color: #ffb315;
+  color: #c16766;
 }
 
 .activities {
@@ -88,5 +92,80 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.suggestions {
+  margin-top: 20vh;
+  width: 100%;
+}
+
+.suggestions .title {
+  color: white;
+  font-weight: normal;
+}
+
+.suggestions .suggestion {
+  width: 100%;
+  border-radius: 6.5px;
+  background-color: #0e1418;
+  -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  padding: 1.5rem 1rem;
+}
+
+.suggestions .suggestion .text {
+  margin-top: 0;
+  margin-left: 1rem;
+}
+
+.suggestions .suggestion .text h3 {
+  margin-top: 0;
+  margin-bottom: 2px;
+}
+
+.suggestions .suggestion .text p {
+  margin-bottom: 0;
+  font-size: 0.85rem;
+  margin-top: 0;
+  padding-top: 0;
+  color: #d2d4de;
+}
+
+nav {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background-color: #0e1418;
+  -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.3);
+  width: 90%;
+  padding: 1.5rem 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 50px;
+}
+
+nav img {
+  width: 30px;
+}
+
+nav img:hover {
+  -webkit-filter: invert(0.8) sepia(1) hue-rotate(320deg) saturate(10);
+          filter: invert(0.8) sepia(1) hue-rotate(320deg) saturate(10);
 }
 /*# sourceMappingURL=style.css.map */
